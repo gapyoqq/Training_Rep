@@ -8,9 +8,7 @@ type AccordionPropsType = {
 }
 
 
-function Accordion(props: AccordionPropsType) {
-
-
+export function Accordion(props: AccordionPropsType) {
     return <div>
         <AccordionTitle collapsed={props.collapsed} setCollapsed = {props.setCollapsed} title={props.title}/>
         {!props.collapsed && <AccordionBody/>}
@@ -37,4 +35,4 @@ function AccordionTitle(props: AccordionTitleType) {
 }
 
 
-export default Accordion
+
