@@ -1,4 +1,5 @@
 import React, {ChangeEvent, useRef, useState} from 'react';
+import {action} from "@storybook/addon-actions";
 
 
 export default {
@@ -32,4 +33,17 @@ export const GetValueByButtonPress = () => {
 }
 
 
-export const CotrolledInput = () => <input value={'privet kak dela?'}/>
+export const CotrolledInput = () =>{
+    const [parentValue,setParentValue] = useState('')
+
+    return  <input
+        value={parentValue}
+        onChange={(e)=>{setParentValue(
+        e.currentTarget.value)}
+        }/>
+}
+
+
+export const CotrolledCheckbox = () => <input value={'privet kak dela?'}/>
+
+export const CotrolledSelect = () => <input value={'privet kak dela?'}/>
