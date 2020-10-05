@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {MouseEvent} from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 
 
@@ -13,7 +13,7 @@ type AccordionPropsType = {
     collapsed: boolean
     setCollapsed: (collapsed: boolean) => void
     items: ItemType[]
-    onClick:(value: any)=>void
+    onClick:(value: any)=> void
 }
 
 
